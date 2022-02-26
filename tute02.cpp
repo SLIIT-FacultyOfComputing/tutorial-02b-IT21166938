@@ -1,4 +1,31 @@
-/*Exercise 2 - Selection
+#include<iostream>
+int main(void)
+{
+  double salary, netSalary;
+  int etype, otHrs, otRate;
+  std::cout<<"Enter employee type:";
+  std::cin>>etype;
+  std::cout<<"Enter salary;";
+  std::cin>>salary;
+  std::cout<<"enter OtHrs:";
+  std::cin>>otHrs;
+
+  switch (etype) {
+      case 1 ;cout<<"1000"<<endl;
+          break;
+      case 2 ;cout<<"1500"<<endl;
+          break;
+      default ;
+          cout<<"1700"<<endl;
+          break;
+    }
+  netSalary = salary + otHrs* otRate;
+  std::cout<<"Net salary is:"<<netSalary;
+  
+   return 0;
+}
+    
+  /*Exercise 2 - Selection
 
 Convert the C program given below which calculates an employee's salary to a C++ program.
 

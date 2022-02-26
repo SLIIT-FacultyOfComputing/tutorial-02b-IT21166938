@@ -1,4 +1,39 @@
-/*Exercise 4 - Functions
+#include <iostream>
+
+long Factorial(int no);
+long nCr(int n, int r);
+
+
+int main() {
+ int n, r;
+ std::cout << "Enter a value for n ";
+ std::cin >> n;
+ std::cout << "Enter a value for r ";
+ std::cin >> r;
+ std::cout << "nCr = ";
+ std::cout << nCr(n,r);
+ std::cout << std::endl;
+}
+long nCr( int n, int r )
+{
+return Factorial( n ) / Factorial( r ) * (Factorial( n - r ));
+}
+
+long Factorial( int no )
+{
+    int fac = 1;
+    
+    for( int i = 1; i <= no; i++ ){
+
+       fac =  fac * i ;
+         
+      
+    }
+
+    return fac;
+
+  
+}/*Exercise 4 - Functions
 
 Write a program to calculate the function called nCr which is defined as
 
